@@ -4,7 +4,7 @@ from campus.api.views import MusicaViewSet, BpmViewSet
 
 router = DefaultRouter()
 router.register(r'musicas', MusicaViewSet)
-router.register(r'bpm', BpmViewSet)
+router.register(r'registro', BpmViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
