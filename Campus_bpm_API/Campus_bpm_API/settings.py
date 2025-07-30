@@ -79,8 +79,12 @@ WSGI_APPLICATION = 'Campus_bpm_API.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'campus_b3gt',
+        'USER': 'campus_b3gt_user',
+        'PASSWORD': 'MVUxjT0Wl6WovUc27Iiou15QnRuTugxZ',
+        'HOST': 'dpg-d250stvfte5s73d0tf2g-a.oregon-postgres.render.com',
+        'PORT': '5432',
     }
 }
 
@@ -107,12 +111,12 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
-
+USE_L10N = True  # (opcional, mas recomendado)
 USE_TZ = True
 
 REST_FRAMEWORK = {
